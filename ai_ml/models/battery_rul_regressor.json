@@ -1,0 +1,17 @@
+{
+  "model_name": "Battery Remaining Useful Life (RUL) Regressor",
+  "algorithm": "RandomForestRegressor",
+  "n_estimators": 50,
+  "max_depth": 10,
+  "input_features": [
+    "speed_kmh",
+    "battery_soc",
+    "battery_temp_c",
+    "voltage",
+    "current_a",
+    "power_kw",
+    "thermal_gradient",
+    "c_rate"
+  ],
+  "target_output": "State_of_Health_Percent"
+}

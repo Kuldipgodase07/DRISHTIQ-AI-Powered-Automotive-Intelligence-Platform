@@ -1,0 +1,16 @@
+{
+  "model_name": "Telemetry Anomaly Isolation Forest Detector",
+  "algorithm": "IsolationForest",
+  "n_estimators": 100,
+  "contamination": 0.1,
+  "input_features": [
+    "speed_kmh",
+    "battery_soc",
+    "battery_temp_c",
+    "voltage",
+    "current_a",
+    "power_kw",
+    "thermal_gradient",
+    "c_rate"
+  ]
+}

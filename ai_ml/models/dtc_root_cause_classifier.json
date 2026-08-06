@@ -1,0 +1,18 @@
+{
+  "model_name": "Diagnostic Trouble Code (DTC) Root Cause Classifier",
+  "algorithm": "DecisionTreeClassifier",
+  "max_depth": 6,
+  "input_features": [
+    "dtc_category_id",
+    "severity_level",
+    "component_age_months",
+    "signal_variance"
+  ],
+  "classes": [
+    "HV_BATTERY_FAULT",
+    "ABS_BRAKING_FAULT",
+    "COOLING_THERMAL_FAULT",
+    "CHASSIS_TRACTION_FAULT",
+    "GENERAL_POWERTRAIN_FAULT"
+  ]
+}

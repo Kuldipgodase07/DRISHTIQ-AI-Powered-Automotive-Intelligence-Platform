@@ -1,0 +1,30 @@
+{
+  "system": "DrishtIQ Automotive Intelligence Platform - AI/ML Engine",
+  "build_date": "2026-08-06",
+  "active_models": [
+    {
+      "name": "battery_rul_regressor",
+      "binary_artifact": "battery_rul_regressor.joblib",
+      "json_config": "battery_rul_regressor.json",
+      "size_bytes": 1906049
+    },
+    {
+      "name": "anomaly_isolation_forest",
+      "binary_artifact": "anomaly_isolation_forest.joblib",
+      "json_config": "anomaly_isolation_forest.json",
+      "size_bytes": 1145513
+    },
+    {
+      "name": "supplier_risk_evaluator",
+      "binary_artifact": "supplier_risk_evaluator.joblib",
+      "json_config": "supplier_risk_evaluator.json",
+      "size_bytes": 4457
+    },
+    {
+      "name": "dtc_root_cause_classifier",
+      "binary_artifact": "dtc_root_cause_classifier.joblib",
+      "json_config": "dtc_root_cause_classifier.json",
+      "size_bytes": 1961
+    }
+  ]
+}

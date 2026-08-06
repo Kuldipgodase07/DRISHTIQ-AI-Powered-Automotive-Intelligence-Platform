@@ -1,0 +1,16 @@
+{
+  "model_name": "Supplier Risk Evaluator Classifier",
+  "algorithm": "DecisionTreeClassifier",
+  "max_depth": 5,
+  "input_features": [
+    "ppm_defect_rate",
+    "claim_cost_per_k_shipments",
+    "log_shipment_volume"
+  ],
+  "classes": [
+    "LOW",
+    "MEDIUM",
+    "HIGH",
+    "CRITICAL"
+  ]
+}

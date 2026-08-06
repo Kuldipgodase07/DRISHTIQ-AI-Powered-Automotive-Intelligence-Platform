@@ -1,0 +1,76 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: drishtiq-backend-deployment
+  namespace: drishtiq-prod
+  labels:
+    app: drishtiq-backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: drishtiq-backend
+  template:
+    metadata:
+      labels:
+        app: drishtiq-backend
+    spec:
+      containers:
+      - name: django-api
+        image: drishtiq/backend:v2.4.0
+        ports:
+        - containerPort: 8000
+        env:
+        - name: DJANGO_SETTINGS_MODULE
+          value: "config.settings.production"
+        - name: MONGODB_URI
+          valueFrom:
+            secretKeyRef:
+              name: drishtiq-secrets
+              key: mongodb-uri
+        resources:
+          limits:
+            cpu: "1000m"
+            memory: "1024Mi"
+          requests:
+            cpu: "250m"
+            memory: "256Mi"
+        livenessProbe:
+          httpGet:
+            path: /api/v1/health/
+            port: 8000
+          initialDelaySeconds: 15
+          periodSeconds: 10
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: drishtiq-backend-service
+  namespace: drishtiq-prod
+spec:
+  type: ClusterIP
+  ports:
+  - port: 8000
+    targetPort: 8000
+  selector:
+    app: drishtiq-backend
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: drishtiq-backend-hpa
+  namespace: drishtiq-prod
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: drishtiq-backend-deployment
+  minReplicas: 3
+  maxReplicas: 10
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 75
