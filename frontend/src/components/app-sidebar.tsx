@@ -66,7 +66,7 @@ export function AppSidebar() {
   return (
     <aside className="hidden md:flex md:flex-col md:w-64 shrink-0 bg-sidebar text-sidebar-foreground border-r border-sidebar-border">
       <div className="h-16 flex items-center px-4 border-b border-sidebar-border overflow-hidden">
-        <img src="/drishtiq_logo5.png" alt="DRISHTIQ Logo" className="h-11 sm:h-12 max-h-12 w-auto object-contain" />
+        <img src="/logos/drishtiq_logo5.png" alt="DRISHTIQ Logo" className="h-11 sm:h-12 max-h-12 w-auto object-contain" />
       </div>
       <nav className="flex-1 overflow-y-auto py-4 px-3 space-y-6">
         {NAV_GROUPS.map((group) => (

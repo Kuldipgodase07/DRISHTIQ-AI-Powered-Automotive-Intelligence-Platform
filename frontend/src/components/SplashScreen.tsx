@@ -63,7 +63,7 @@ export function SplashScreen({ onFinish }: { onFinish?: () => void }) {
         {/* Logo & Tightly Aligned Subtitle */}
         <div className="flex flex-col items-center">
           <img
-            src="/splash_logo.png"
+            src="/logos/splash_logo.png"
             alt="DRISHTIQ Splash Logo"
             className="h-44 sm:h-52 md:h-60 w-auto max-w-[380px] sm:max-w-[440px] object-contain transition-transform duration-700 ease-out hover:scale-[1.02]"
           />

@@ -84,7 +84,7 @@ function LoginPage() {
         />
         <div className="relative">
           <div className="flex items-center">
-            <img src="/drishtiq_logo5.png" alt="DRISHTIQ Logo" className="h-12 sm:h-14 w-auto object-contain" />
+            <img src="/logos/drishtiq_logo5.png" alt="DRISHTIQ Logo" className="h-12 sm:h-14 w-auto object-contain" />
           </div>
         </div>
         <div className="relative space-y-6 max-w-md">
@@ -120,7 +120,7 @@ function LoginPage() {
       <div className="flex items-center justify-center p-6 lg:p-12">
         <div className="w-full max-w-md">
           <div className="lg:hidden flex items-center mb-6">
-            <img src="/drishtiq_logo5.png" alt="DRISHTIQ Logo" className="h-10 sm:h-12 w-auto object-contain" />
+            <img src="/logos/drishtiq_logo5.png" alt="DRISHTIQ Logo" className="h-10 sm:h-12 w-auto object-contain" />
           </div>
           <h1 className="text-2xl font-semibold tracking-tight">Sign in to your workspace</h1>
           <p className="mt-1 text-sm text-muted-foreground">

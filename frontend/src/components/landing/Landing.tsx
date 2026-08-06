@@ -234,7 +234,7 @@ function Nav() {
         <div className="flex h-16 items-center justify-between pl-3 sm:pl-4 lg:pl-5 pr-4 sm:pr-6 lg:pr-8">
           <a href="#" className="flex shrink-0 items-center justify-center my-auto self-center -ml-1 sm:-ml-2 overflow-visible h-full">
             <img
-              src="/drishtiq_logo3.png"
+              src="/logos/drishtiq_logo3.png"
               alt="DRISHTIQ Logo"
               className="h-13 sm:h-14 max-h-14 w-auto max-w-[280px] sm:max-w-[320px] object-contain scale-[1.35] origin-left my-auto transition-transform duration-300 hover:scale-[1.38]"
             />
@@ -1864,7 +1864,7 @@ function Footer() {
           <div className="lg:col-span-2">
             <a href="#" className="flex items-center py-1">
               <img
-                src="/drishtiq_logo3.png"
+                src="/logos/drishtiq_logo3.png"
                 alt="DRISHTIQ Logo"
                 className="h-13 sm:h-14 max-h-14 w-auto max-w-[280px] object-contain"
               />

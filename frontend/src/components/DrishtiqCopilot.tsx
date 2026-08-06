@@ -57,7 +57,7 @@ export function DrishtiqCopilot() {
           isOpen && "rotate-90 scale-0 opacity-0 pointer-events-none"
         )}
       >
-        <img src="/drishti_logo2.png" alt="DRISHTIQ Logo" className="h-9 w-9 object-contain" />
+        <img src="/logos/drishti_logo2.png" alt="DRISHTIQ Logo" className="h-9 w-9 object-contain" />
       </button>
 
       {/* Chat Window */}
@@ -72,7 +72,7 @@ export function DrishtiqCopilot() {
         <div className="flex items-center justify-between border-b border-border/50 bg-muted/30 px-4 py-3">
           <div className="flex items-center gap-3">
             <div className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 p-1">
-              <img src="/drishtiq_logo1.png" alt="DRISHTIQ Logo" className="h-7 w-7 object-contain" />
+              <img src="/logos/drishtiq_logo1.png" alt="DRISHTIQ Logo" className="h-7 w-7 object-contain" />
             </div>
             <div>
               <h3 className="font-semibold text-foreground tracking-tight">DRISHTIQ™ Copilot</h3>
